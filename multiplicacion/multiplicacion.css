@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&family=Fraunces:wght@500&family=Jost:wght@300&family=Lilita+One&family=Pangolin&family=Pixelify+Sans&display=swap');
+
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(https://i.pinimg.com/originals/0c/bf/2f/0cbf2f5c3fb37d033c0bc791ae196dbb.gif);
+    font-family: 'Ysabeau', sans-serif;
+    color: white;
+  }
+  
+  h1 {
+    margin: 20px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-shadow: 0 0 35px white;
+  }
+  
+  /* Contenedor principal */
+  #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo para cada matriz */
+  .matrix {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border: 5px solid rgb(27, 27, 65); 
+    
+  }
+  
+  .titulo {
+    color: rgb(27, 27, 65);
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  /* Estilo para el botón */
+  .boton {
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(147, 147, 199);
+    border-radius: 10px;
+    border:solid;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: 'Lilita One', sans-serif;
+  }
+  
+  /* Estilo para las matrices */
+  .matrix input {
+    border-radius: 10px;
+    background-color: rgb(21, 62, 74);
+    color: rgb(239, 246, 253);
+    padding: 5px;
+    border: none;
+    margin: 2px;
+    width: 40px;
+    text-align: center;
+  }
+  
+  /* Estilo para las matrices resultantes (solo lectura) */
+  .result-container .matrix input {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    
+  }
+  
+  /* Estilo para los contenedores de matrices A y B */
+  .matrix-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    
+  }
+  
+
+  /* Estilo para el contenedor del botón */
+  .button-container {
+    text-align: center;
+    
+  }
+  
+  .titulo2{
+    color: rgb(2, 2, 41);
+  }
+  
+  input{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(205, 244, 255);
+    color: rgb(8, 25, 59);
+    border-radius: 10px;
+    border: 3px solid rgb(191, 239, 245); /* Añade un borde sólido */
+  }
+  /* Estilo para el botón CALCULAR */
+  input[type="button"] {
+    background-color: #310653; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno (arriba/abajo izquierda/derecha) */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: block; /* Hace que el botón sea un bloque para que funcione la propiedad "margin: 0 auto" */
+    font-family: 'Lilita One', sans-serif;
+  }
+  
+  /* Estilo para el botón CALCULAR al pasar el ratón */
+  input[type="button"]:hover {
+    background-color: #45a0a0; /* Cambia el color de fondo al pasar el ratón */
+    color: #310653;
+  }
+
+
+/* styles.css */
+
+/* Estilo para el texto "Matriz A" */
+/* styles.css */
+
+/* Estilo para el texto "Matriz A" */
+.matriz-label {
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #ffffff; /* Color de texto (rojo en este ejemplo) */
+  /* Centra el texto horizontalmente */
+  text-align: center;
+  /* Otros estilos que desees aplicar */
+}
+
+/* styles.css */
+
+/* Estilo para el texto "Matriz A" y "Matriz Resultante" */
+.matriz-label {
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: bold; /* Negrita */
+  color: #ffffff; /* Color de texto (rojo en este ejemplo) */
+  /* Centra el texto horizontalmente */
+  text-align: center;
+  background-color: #1b0a34;
+  padding: 60px;
+  margin: 20px;
+  border-radius: 20px;
+  border: 5px solid rgb(230, 249, 255); /* Añade un borde sólido */
+  font-family: 'Pangolin', cursive;
+  /* Otros estilos que desees aplicar */
+}
+
+

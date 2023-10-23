@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&family=Fraunces:wght@500&family=Jost:wght@300&family=Lilita+One&family=Pangolin&family=Pixelify+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  .titulo1 {
+    margin: 20px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'Dela Gothic One', sans-serif;
+    text-shadow: 0 0 35px white;
+ }
+  
+  body{
+    background-color: rgb(4, 4, 39);
+  }
+
+  .fondo1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid rgb(230, 249, 255); /* Añade un borde sólido */
+    background-color: rgb(47, 9, 83);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fondo2{
+    margin: 20px;
+    background-color: rgb(114, 114, 180);
+    padding: 20px; /* Espacio interno para separar el contenido del borde */
+    border-radius: 10px; /* Radio de borde para redondear el cuadro */
+    max-width: 500px; /* Ancho máximo del cuadro */
+ 
+}
+.fondo3{
+    margin: 20px;
+    background-color: rgb(8, 8, 45);
+    color: white;
+    padding: 20px; /* Espacio interno para separar el contenido del borde */
+    border-radius: 10px; /* Radio de borde para redondear el cuadro */
+    max-width: 500px; /* Ancho máximo del cuadro */
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+button{
+    margin: 10px;
+    padding: 10px;
+    border: solid;
+    font-family: 'Lilita One', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(6, 6, 69);
+    color: aliceblue;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(172, 251, 251);
+    color: rgb(46, 15, 104);
+    transition: ease-in .3s;
+    cursor: pointer;
+}
+
+input{
+    background-color: rgb(206, 197, 228);
+    color: rgb(25, 46, 64);
+    border-radius: 20px;
+    padding: 5px;
+    border: 3px solid rgb(191, 239, 245); /* Añade un borde sólido */
+}
+
+label{
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.resul {
+    font-size: 24px; 
+    line-height: 1.4;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans&family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans&family=Satisfy&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <title>Método de Gauss-Jordan</title>
+</head>
+<body>
+  <div class="titulo"><h2>Método de Gauss-Jordan</h2></div>
+  <div class="txt1"><p><strong>Resolución de un sistema de ecuaciones lineales con <span id="dimension">"n"</span> incógnitas.</strong></p></div>
+
+  <div class="formu">
+    <form name="matriz">
+      <div class="txt-form"><label for="tamaño">Seleccione el tamaño de la ecuación:</label></div>
+      <select id="tamaño" onchange="cambiarTamaño()">
+        <option value="2">2x2</option>
+        <option value="3" selected>3x3</option>
+        <option value="4">4x4</option>
+      </select>
+
+      <div id="ecuaciones">
+      <!-- Campos de ecuación se generan aquí -->
+      </div>
+
+      <input class="btn" type="button" value="Resolver" onclick="gaussJordan()"><br><br>
+
+      <!-- Resultados -->
+      <div class="labels">
+        <label for="resultados">Resultados:</label><br>
+        <label for="solucion_0">x:</label><input type="text" id="solucion_0" size="3">
+        <label for="solucion_1">y:</label><input type="text" id="solucion_1" size="3">
+        <label for="solucion_2">z:</label><input type="text" id="solucion_2" size="3">
+        <label for="solucion_3">w:</label><input type="text" id="solucion_3" size="3">
+      </div>
+    </form>
+  </div>
+
+  <!-- Mostrar las operaciones -->
+  <div id="operacionesDiv">
+    <h3>Operaciones:</h3>
+  </div>
+
+  <!-- Mostrar la matriz resultante -->
+  <div id="matrizResultanteDiv">
+    <!-- Aquí se mostrará la matriz resultante -->
+  </div>
+
+  <script src="app2.js">
+    // Generar campos de ecuación iniciales para 3x3
+    generarCamposEcuacion();
+    document.getElementById("dimension").innerText = "tres";
+  </script>
+</body>
+</html>
+

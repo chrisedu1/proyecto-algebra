@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="multiplicacion.css" rel="stylesheet">
+  <title>Calculadora de Matrices</title>
+</head>
+<body>
+  <center><h1>CALCULADORA MULTIPLICACIÓN DE MATRICES</h1></center>
+  <div id="main">
+    <div class="matrix-container">
+      <div class="matrix">
+        <div class="fondo">
+          <div class="titulo">Dimensiones matriz A</div>
+          <form name="dimA">
+            <div class="titulo2">Filas</div>
+            <input type="text" size="4" id="filaA">
+            <div class="titulo2">Columnas</div> 
+            <input type="text" size="4" id="colA">
+          </form>
+        </div>
+      </div>
+      <div class="matrix">
+        <div class="fondo">
+          <div class="titulo">Dimensiones matriz B</div>
+          <form name="dimB">
+            <div class="titulo2">Filas</div>
+            <input type="text" size="4" id="filaB">
+            <div class="titulo2">Columnas</div>
+            <input type="text" size="4" id="colB">
+          </form>
+        </div>
+      </div>
+    </div>
+    <input class="boton" type="button" value="CREAR MATRICES" onclick="Comprobar()" name="crear">
+  </div>
+  <div id="matrices"></div>
+  <script src="multip.js" language="javascript" type="text/javascript"></script>
+</body>
+</html>

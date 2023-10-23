@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #00001a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    background-color: #13142a;
+    color: white;
+}
+
+.txt1 {
+    width: 50vw;
+    height: 50px;
+    padding-top: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Pixelify Sans', cursive;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #32314e;
+    color: antiquewhite;
+}
+
+.container {
+    margin-top: 25px;
+}
+
+form {
+    width: 40vw;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #1a1a33;
+    border-radius: 15px;
+    border-color: aqua;
+    border-style: double;
+}
+
+.txt-form {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #4e4c6b;
+    color: azure;
+}
+
+select {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+select:hover {
+    background-color: #6c6889;
+    color: white;
+    transition: ease-in .3s;
+}
+
+input {
+    width: 45px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 10px;
+    border-style: none;
+    text-align: center;
+    background-color: chartreuse;
+}
+
+input:hover {
+    background-color: rgb(22, 121, 88);
+    color: brown;
+    transition: ease-in .3s;
+}
+
+.btn {
+    width: 70px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(19, 122, 122);
+}
+
+.btn:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.labels {
+    color: white;
+}
+
+.tipo-sol {
+    margin-top: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Dela Gothic One', cursive;
+}
+

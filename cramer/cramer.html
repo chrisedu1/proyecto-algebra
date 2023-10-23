@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dela+Gothic+One&family=Pixelify+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Reglas de Cramer</title>
+</head>
+<body>
+  <div class="titulo">
+    <h2>Reglas de Cramer</h2>
+  </div>
+  <div class="txt1">
+    <p>Resolución de un sistema de ecuaciones lineales con <span id="dimension">"n"</span> incógnitas.</p>
+  </div>
+  <div class="container">
+    <form name="matriz">
+      <div class="txt-form"><label for="tamaño">Seleccione el tamaño de la ecuación:</label></div>
+      <select id="tamaño" onchange="cambiarTamaño()">
+        <option value="2">2x2</option>
+        <option value="3" selected>3x3</option>
+        <option value="4">4x4</option>
+      </select>
+
+      <div class="casillas" id="ecuaciones">
+     
+      </div>
+
+      <input class="btn" type="button" value="Resolver" onclick="cramer()"><br><br>
+
+      <!-- Resultados -->
+      <div class="labels">
+        <label class="res" for="resultados">Resultados:</label><br>
+        <label for="solucion_0">x:</label><input type="text" id="solucion_0" size="3">
+        <label for="solucion_1">y:</label><input type="text" id="solucion_1" size="3">
+        <label for="solucion_2">z:</label><input type="text" id="solucion_2" size="3">
+        <label for="solucion_3">w:</label><input type="text" id="solucion_3" size="3">
+      </div>
+
+      <div class="tipo-sol" id="mensaje-solucion"></div>
+    </form>
+  </div>
+
+  <canvas id="grafico"></canvas>
+
+  <script src="app1.js">
+    generarCamposEcuacion();
+    document.getElementById("dimension").innerText = "tres";
+  </script>
+</body>
+</html>

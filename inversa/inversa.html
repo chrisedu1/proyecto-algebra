@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="inversa.css" rel="stylesheet">
+    <title>Calculadora de Matrices</title>
+</head>
+<body>
+    <center><h1 class="titulo1">Calculadora de Matriz Inversa</h1></center>
+
+    <div class="fondo1">
+        <h2>Ingrese las dimensiones de la matriz</h2>
+        <br>
+        <label for="rows">Filas</label>
+        <input class="uno" type="number" id="rows" min="1" value="2">
+        <br>
+        <label for="cols">Columnas</label>
+        <input class="dos" type="number" id="cols" min="1" value="2">
+        <button onclick="createMatrix()">Crear Matriz</button>
+        <div class="fondo2">
+        <div id="matrixDiv"></div> <!-- Asegúrate de que matrixDiv esté dentro de fondo1 -->
+        <div class="fondo3">
+        <div class="resul" id="resultDiv"></div></div>
+        </div>
+    </div>
+    <div id="matrixDiv"></div>
+    <div id="resultDiv"></div>
+    <script src="inversa.js"></script>
+</body>
+</html>
+
+
