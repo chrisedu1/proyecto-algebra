@@ -48,8 +48,11 @@ var size = 3; // Tamaño predeterminado
       mostrarOperaciones(operaciones);
       mostrarSoluciones();
       mostrarMatrizResultante();
+      graficarSoluciones()
     }
-
+    function mostrarGrafico() {
+      graficarSoluciones();
+    }
     function mostrarOperaciones(operaciones) {
       var operacionesDiv = document.getElementById("operacionesDiv");
       operacionesDiv.innerHTML = "";
@@ -117,3 +120,52 @@ var size = 3; // Tamaño predeterminado
       }
       matrizResultanteDiv.appendChild(table);
     }
+
+    function graficarSoluciones() {
+      var soluciones = [];
+      for (var i = 0; i < size; i++) {
+        soluciones.push({
+          x: i, // El valor en el eje x será la posición
+          y: parseFloat(document.getElementById("solucion_" + i).value)
+        });
+      }
+    
+      var ctx = document.getElementById("grafico").getContext("2d");
+    
+      var scatterChart = new Chart(ctx, {
+        type: 'scatter',
+        data: {
+          datasets: [{
+            label: 'Soluciones',
+            data: soluciones,
+            borderColor: 'white',
+            backgroundColor: 'white'
+          }]
+        },
+        options: {
+          scales: {
+            x: {
+              type: 'linear',
+              position: 'bottom'
+            },
+            y: {
+              type: 'linear',
+              position: 'left'
+            }
+          }
+        }
+      });
+    
+      // Agregar etiquetas a los puntos de datos
+      soluciones.forEach((point, index) => {
+        const model = scatterChart.getElementAtEvent(point);
+        if (model.length > 0) {
+          const modelPoint = model[0];
+          const x = modelPoint.x;
+          const y = modelPoint.y;
+          const label = `x: ${x}, y: ${y}`;
+          ctx.fillText(label, x, y - 10);
+        }
+      });
+    }
+    

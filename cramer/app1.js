@@ -70,6 +70,7 @@ var size = 3;  // Tamaño predeterminado
       for (var i = 0; i < size; i++) {
         document.getElementById("solucion_" + i).value = soluciones[i];
       }
+      graficarXY();
     }
     
 
@@ -95,4 +96,40 @@ var size = 3;  // Tamaño predeterminado
         ecuacionesDiv.appendChild(document.createElement("br"));
       }
     }
-  
+
+    function graficarXY() {
+      var xValue = parseFloat(document.getElementById("solucion_0").value);
+      var yValue = parseFloat(document.getElementById("solucion_1").value);
+    
+      var ctx = document.getElementById("grafico").getContext("2d");
+    
+      var lineChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          datasets: [{
+            label: 'Solución (x, y)',
+            data: [{ x: 0, y: 0 }, { x: xValue, y: yValue }],
+            borderColor: 'black',
+            fill: false,
+            showLine: true
+          }]
+        },
+        options: {
+          scales: {
+            x: {
+              type: 'linear',
+              position: 'bottom',
+              min: -10, // Valor mínimo para el eje x
+              max: 10,  // Valor máximo para el eje x
+            },
+            y: {
+              type: 'linear',
+              position: 'left',
+              min: -10, // Valor mínimo para el eje y
+              max: 10,  // Valor máximo para el eje y
+            }
+          }
+        }
+      });
+    }
+    
