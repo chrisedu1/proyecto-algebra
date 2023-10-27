@@ -127,3 +127,47 @@ input:hover {
     background-color: #1a1a33;
     border-style: ridge;
 }
+
+.botones {
+    margin-top: 20px;
+}
+
+.btn-regresar{
+    border:0px solid;
+    border-radius: 10px;
+    background-color: rgb(15, 12, 43);
+    color:white;
+    padding: 10px;
+    margin-right: 1000px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.btn-regresar:hover{
+    background-color: rgba(156, 167, 225, 0.763);
+    color: #fcfcfc;
+    transition: ease-in .4s;}
+  
+  .btn-siguiente{
+    float: right;
+    border:0px solid;
+    border-radius: 10px;
+    background-color: rgb(15, 12, 43);
+    color:white;
+    padding: 10px;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+  
+  }
+     
+  .btn-siguiente:hover{
+    background-color: rgba(156, 167, 225, 0.763);
+    color: #fcfcfc;
+    transition: ease-in .4s;
+  }
+  .botones{
+    padding: 20px;
+  }
